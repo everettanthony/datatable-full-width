@@ -7,7 +7,11 @@ let table = new DataTable('#myTable', {
         topEnd: null
     },
     info: false,
-    paging: false
+    paging: false,
+    fixedHeader: {
+        header: true,
+        headerOffset: 49
+    }
 });
 
 txtSearch.addEventListener('keyup', function () {
